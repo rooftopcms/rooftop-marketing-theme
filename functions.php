@@ -7,9 +7,9 @@ function setup_features() {
      *
      * https://codex.wordpress.org/Function_Reference/register_post_type
      */
-    RooftopCMS::addContentType('SDK Language');
-    RooftopCMS::addContentType('Product Feature');
-    RooftopCMS::addContentType('Product Plan');
+    RooftopCMS::addContentType('sdk_language');
+    RooftopCMS::addContentType('product_feature');
+    RooftopCMS::addContentType('product_plan');
 
 
     /**
@@ -19,7 +19,7 @@ function setup_features() {
      * array: an array of content types
      * string 'all' - to add the taxonomy to of your publicly accessible content types
      */
-    RooftopCMS::addTaxonomy('Product Benefits', 'Product Plan');
+    RooftopCMS::addTaxonomy('product_benefits', 'product_plan');
 }
 
 add_action('init', 'setup_features', 20);
